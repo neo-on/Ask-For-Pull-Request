@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+#emailList {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 2px;
+    max-height: 300px;
+    max-width: 150px;
+    overflow: auto;
+}
+
+#emailList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#addButton {
+    padding: 5px 10px;
+    margin-top: 5px;
+    background: navajowhite;
+}
+
+#addButton:hover {
+    background: aquamarine;
+}
+
+.deleteButton {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+img {
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+

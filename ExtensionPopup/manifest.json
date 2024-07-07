@@ -1,0 +1,17 @@
+{
+  "name": "Ask For PR",
+  "version": "1.0.0",
+  "description": "This is an extension that is made to ease the life of a developer by automating the process of messaging required people for approval of pull request.",
+  "manifest_version" : 3,
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "persist": false
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
