@@ -5,12 +5,23 @@
   "manifest_version" : 3,
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs",
+    "notifications"
   ],
   "background": {
-    "service_worker": "background.js",
-    "persist": false
+    "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://github.com/*",
+        "*://dev.azure.com/*",
+        "*://*.aws.amazon.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html"
   }

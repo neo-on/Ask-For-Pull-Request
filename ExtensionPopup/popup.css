@@ -1,4 +1,6 @@
 body {
+    height: 200px;
+    width: 200px;
     font-family: Arial, sans-serif;
     padding: 10px;
 }
@@ -12,7 +14,7 @@ h1 {
     list-style-type: none;
     padding: 2px;
     max-height: 300px;
-    max-width: 150px;
+    max-width: 300px;
     overflow: auto;
 }
 
